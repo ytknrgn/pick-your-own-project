@@ -1,0 +1,52 @@
+@import 'defaults';
+
+.new-game {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  &__subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__choose {
+    font-family: $font-family;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  &__button {
+    background: transparent;
+    font-family: $font-family;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    color: $primary-color;
+    padding: 5px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 10px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #f1f1f1;
+    }
+  }
+}
