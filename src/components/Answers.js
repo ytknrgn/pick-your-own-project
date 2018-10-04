@@ -1,6 +1,8 @@
 import React from 'react';
 import Answer from './Answer';
 
+import '../styles/components/answers.scss';
+
 class Answers extends React.Component {
 
   constructor() {
@@ -32,9 +34,9 @@ class Answers extends React.Component {
     console.log(answers);
   
     return (
-        <ul className='answers'>
+        <div className='answers'>
           {answers.map(answer => <Answer key={answer.content} answer={answer} getResponse={this.props.getResponse}/>)}
-        </ul>
+        </div>
     );
   }
 }
