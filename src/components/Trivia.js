@@ -1,10 +1,10 @@
 import React from 'react';
 import Answers from './Answers';
-
+import PropTypes from 'prop-types';
 import '../styles/components/trivia.scss';
 
 function Trivia({ trivia, getResponse }) {
-  
+
   return (
     <div className='trivia__wrapper'>
       <div className='trivia'>
@@ -15,5 +15,10 @@ function Trivia({ trivia, getResponse }) {
     </div>
   );
 }
+
+Trivia.propTypes = {
+  trivia: PropTypes.object.isRequired,
+  getResponse: PropTypes.func.isRequired
+};
 
 export default Trivia;

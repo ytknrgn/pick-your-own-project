@@ -1,6 +1,6 @@
 import React from 'react';
 import Answer from './Answer';
-
+import PropTypes from 'prop-types';
 import '../styles/components/answers.scss';
 
 class Answers extends React.Component {
@@ -40,5 +40,11 @@ class Answers extends React.Component {
     );
   }
 }
+
+Answers.propTypes = {
+  incorrectAns: PropTypes.array.isRequired,
+  correctAns: PropTypes.string.isRequired,
+  getResponse: PropTypes.func.isRequired
+};
 
 export default Answers;
