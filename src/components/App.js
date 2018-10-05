@@ -3,8 +3,7 @@ import Trivia from './Trivia';
 import NewGame from './NewGame';
 import PlayerStats from './PlayerStats';
 import GameOver from './GameOver';
-
-import '../styles/components/app.scss';
+import '../../styles/components/app.scss';
 
 class App extends React.Component {
 

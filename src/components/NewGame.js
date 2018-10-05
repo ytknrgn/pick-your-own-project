@@ -1,7 +1,7 @@
 import React from 'react';
 import Difficulty from './Difficulty';
 import PropTypes from 'prop-types';
-import '../styles/components/new-game.scss';
+import '../../styles/components/new-game.scss';
 
 function NewGame({ getDifficulty }) {
 

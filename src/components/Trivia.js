@@ -1,7 +1,7 @@
 import React from 'react';
 import Answers from './Answers';
 import PropTypes from 'prop-types';
-import '../styles/components/trivia.scss';
+import '../../styles/components/trivia.scss';
 
 function Trivia({ trivia, getResponse }) {
 

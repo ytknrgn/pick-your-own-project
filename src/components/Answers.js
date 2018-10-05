@@ -1,7 +1,7 @@
 import React from 'react';
 import Answer from './Answer';
 import PropTypes from 'prop-types';
-import '../styles/components/answers.scss';
+import '../../styles/components/answers.scss';
 
 class Answers extends React.Component {
 
