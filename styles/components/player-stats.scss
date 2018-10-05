@@ -1,0 +1,13 @@
+@import 'defaults';
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  width: 100%;
+
+  div {
+    font-size: 0.8rem;
+  }
+}
