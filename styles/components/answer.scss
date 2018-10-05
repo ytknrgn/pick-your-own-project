@@ -21,19 +21,14 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
 
-  &:hover {
-    background-color: $primary-color;
-    color: #f1f1f1;
-  }
-
   &--red {
-    background-color: red !important;
+    background-color: red;
     color: #f1f1f1;
     animation-name: shakeAnim;
   }
 
   &--green {
-    background-color: green !important;
+    background-color: green;
     color: #f1f1f1;
     transform: scale(1.05);
   }
