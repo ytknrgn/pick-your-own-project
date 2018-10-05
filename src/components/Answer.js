@@ -3,16 +3,29 @@ import cx from 'classnames';
 import PropTypes from 'prop-types';
 import '../styles/components/answer.scss';
 
-function Answer({ getResponse, answer }) {
+class Answer extends React.Component {
+  
+  constructor() {
+    super();
+    this.state = { answered: false };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
+  handleClick(event) {
+    setTimeout(() => this.props.getResponse(this.props.answer.correct), 1000);
+    this.setState({ answered: true });
+  }
+    
+  render() {
     const classes = cx('answer', {
-      'answer--green': answer.correct,
-      'answer--red': !answer.correct
+      'answer--green': this.state.answered && this.props.answer.correct,
+      'answer--red': this.state.answered && !this.props.answer.correct
     });
 
     return (
-        <button className={classes} onClick={()=>setTimeout(() => getResponse(answer.correct), 500)}>{answer.content}</button>
+      <button className={classes} onClick={this.handleClick}>{this.props.answer.content}</button>
     );
+  }
 }
 
 Answer.propTypes = {

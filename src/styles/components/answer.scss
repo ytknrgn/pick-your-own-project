@@ -16,20 +16,36 @@
   text-decoration: none;
   text-transform: uppercase;
   outline: none;
+  position: relative;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
 
   &:hover {
     background-color: $primary-color;
     color: #f1f1f1;
   }
 
-  &--red:focus {
-    background-color: red;
+  &--red {
+    background-color: red !important;
     color: #f1f1f1;
+    animation-name: shakeAnim;
   }
 
-  &--green:focus {
-    background-color: green;
+  &--green {
+    background-color: green !important;
     color: #f1f1f1;
+    transform: scale(1.05);
   }
+}
 
+@keyframes shakeAnim {
+  0% {left: 0}
+  1% {left: -3px}
+  2% {left: 5px}
+  3% {left: -8px}
+  4% {left: 8px}
+  5% {left: -5px}
+  6% {left: 3px}
+  7% {left: 0}
 }
