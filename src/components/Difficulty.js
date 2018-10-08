@@ -13,5 +13,4 @@ Difficulty.propTypes = {
   getDifficulty: PropTypes.func.isRequired
 };
 
-
 export default Difficulty;
